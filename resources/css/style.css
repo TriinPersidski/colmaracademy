@@ -1,0 +1,164 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #373737; /* dark gray */
+}
+
+main {
+  text-align: left;
+}
+
+.columns {
+  margin: 0 auto;
+  padding: 1.778rem 0 1.778rem 1.334rem;
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+p, span, a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.button {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+ul li {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header .mobile {
+  display: none;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1.33rem;
+}
+
+header .desktop.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 1.8rem;
+  padding-right: 0.5rem;
+}
+
+header h1 a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: gray;
+  transition: color 550ms ease 10ms;
+}
+
+header h1 a:hover {
+  color: #0EC7C1;  /*Aqua */
+
+}
+
+header h1 a strong {
+  font-weight: bold;
+  color: #373737;
+  transition: color 550ms ease 10ms;
+}
+
+header h1 a strong:hover {
+  color: #0EC7C1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1em;
+}
+
+nav a {
+  color: #373737; /*dark gray */
+  line-height: 1.6;
+  transition: color 550ms ease 10ms;
+}
+
+nav a:hover {
+  color: #0EC7C1;  /*Aqua */
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop.logo,
+  header .desktop {
+    display: none;
+  }
+
+  header .content {
+    padding: 0.65rem 1rem;
+    margin-top: 0.25rem;
+  }
+
+header nav {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header .mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+ width: 100%;
+}
+
+header li {
+  padding-left: 0;
+}
+}
+
+ /* Main Banner */
+
+ #start {
+    width: 100%;
+    background-color: #e8e7e5;
+ }
+
+ #start .images-container, #information .images-container, #thesis .images-container {
+   width: 60%;
+ }
+
+ #start .content, #information .content, #thesis .content {
+   width: 40%;
+   padding-left: 1.334rem;
+ }
