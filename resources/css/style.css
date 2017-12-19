@@ -1,51 +1,40 @@
-/* Universal Styles */
-
 html {
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  margin: 0;
-  padding: 0;
-  color: #373737; /* dark gray */
-}
+  }
 
-main {
+body {
   margin: 0 auto;
   padding: 0;
 }
+/* Global */
+
+.main-content {
+  top: 0;
+  width: 1024px;
+  background-color: white;
+}
 
 h1 {
-  font-family: 'Archivo Black', sans-serif;
   font-size: 3rem;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 800;
   line-height: 1.3;
 }
 
 h2 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 2rem;
   font-weight: 800;
-}
-
-h4 {
-  font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
   line-height: 1.3;
 }
 
-p, span, a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
+h4 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-}
-
-.button {
-  color: white;
-  font-size: 1rem;
-  text-align: center;
-  background-color: #4a4a4a;
-  padding: 0.445rem 0;
-  width: 100%;
+  line-height: 1.3;
 }
 
 ul li {
@@ -57,46 +46,11 @@ ul li {
   text-align: left;
 }
 
-.columns {
-  margin: 0 auto;
-  padding: 1.778rem 0 1.778rem 1.334rem;
-  border: 1 px solid red;
-  }
-
-.columns .image-container {
-  width: 60%;
-  height: auto;
-  display: inline-block;
-  }
-
- .image-container img {
-  display: block;
-  max-width: 100%;
+.button {
+  background-color: #4a4a4a;
+  font-size: 1rem;
+  width: 100%;
 }
-
-.columns .content, #information .content, #thesis .content {
-  width: 40%;
-  padding-left: 1.334rem;
-}
-
-@media only screen and (max-width: 740px) {
-  .columns {
-    padding: 0;
-  }
-
- .columns .image-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-#start .content {
-    width: 100%;
-    padding: 1.778rem 0.88rem 1.334rem 0.88rem;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
 
 /* Header */
 
@@ -113,7 +67,7 @@ header .mobile {
 header .content {
   display: flex;
   align-items: center;
-  padding: 0.875rem 1.33rem;
+  padding: 0 1.33rem;
 }
 
 header .desktop.logo {
@@ -127,40 +81,33 @@ header img {
   padding-right: 0.5rem;
 }
 
-header h1 a {
+header span {
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: gray;
+  color: #4a4a4a;
   transition: color 550ms ease 10ms;
 }
 
-header h1 a:hover {
+header span:hover {
   color: #0EC7C1;  /*Aqua */
-
 }
 
-header h1 a strong {
-  font-weight: bold;
-  color: #373737;
-  transition: color 550ms ease 10ms;
-}
-
-header h1 a strong:hover {
-  color: #0EC7C1;
-}
+/* Nav */
 
 header nav ul {
   display: flex;
+  list-style-type: none;
 }
 
 nav li {
-  padding-left: 1em;
+  padding-left: 0.88rem;
 }
 
 nav a {
   color: #373737; /*dark gray */
   line-height: 1.6;
   transition: color 550ms ease 10ms;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -174,8 +121,7 @@ nav a:hover {
   }
 
   header .content {
-    padding: 0.65rem 1rem;
-    margin-top: 0.25rem;
+    padding: 0;
   }
 
 header nav {
@@ -188,68 +134,18 @@ header .mobile {
   justify-content: space-around;
 }
 
-header ul {
+header nav ul {
  width: 100%;
+ padding-left: 0;
+ margin-top: 0.69rem;
+ margin-bottom: 0.69rem;
 }
 
-header li {
-  padding-left: 0;
-}
 }
 
- /* Main Banner */
 
- #start {
-  width: 100%;
-  background-color: #e8e7e5;
-}
-
- #start .content {
-   border: 1px solid black;
-   width: 27%;
-   display: inline-block;
-}
-
-#start h4 {
-  padding: 1.334rem 0;
-}
-
-  @media only screen and (max-width: 1100px) {
-    #start h1 {
-      font-size: 1.5rem;
-    }
-    #start h4 {
-      font-size: 1rem;
-    }
-  }
-
-  @media only screen and (max-width: 740px) {
-    #start .content {
-      display: block;
-      padding: 1.778rem 0.88rem 1.334rem 0.88rem;
-    }
-
-    .image-container, .content {
-      width: 100%;
-    }
-  }
-  /*  Campus section */
-
-#information {
-  background-color: white;
-  }
-
-#information .quote {
-  width: auto;
-  border: 1px solid black;
-}
-
-#information .campus-col {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
-
-#information .image-thumbnail.mobile {
-    display: none;
-  }
+/* Start section */
+/* Campus section */
+/* Courses section */
+/* Thesis section */
+/* footer section */
