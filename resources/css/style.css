@@ -277,8 +277,8 @@ header nav ul {
 
 #information .right {
   margin:0;
-  padding: 0;
   height: auto;
+  width: 37%;
 }
 
 .feature {
@@ -297,10 +297,10 @@ header nav ul {
 
 .image-thumbnail {
   width: 35%;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
-.image-thumbnail:nth-child(1n+1) {
+.image-thumbnail:first-child {
   padding-top: 0;
 }
 
@@ -335,7 +335,7 @@ header nav ul {
 @media only screen and (max-width: 1325px) {
   .content span {
     font-size: 1rem;
-  }
+}
 
 .section {
   width: 100%;
@@ -400,12 +400,13 @@ header nav ul {
 }
 
  h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
  span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 }
+
 /* Courses section */
 
 .learning {
@@ -467,9 +468,9 @@ header nav ul {
     font-size: 1rem;
   }
 
-  .tiles h5 {
-    font-size: 0.8rem;
-  }
+.tiles h5 {
+  font-size: 0.8rem;
+}
 }
 
 @media only screen and (max-width: 760px) {
@@ -477,39 +478,41 @@ header nav ul {
     display: none;
   }
 
-  .learning {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    overflow-x: hidden;
-  }
+.learning {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  overflow-x: hidden;
+}
 
-  .learning h2 {
-    text-align: center;
-    padding-top: 1.778rem;
-    padding-bottom: 0.88rem;
-    margin: 0;
-  }
+.learning h2 {
+  text-align: center;
+  padding-top: 1.778rem;
+  padding-bottom: 0.88rem;
+  margin: 0;
+}
 
-  .tiles {
-    width: 90%;
-    padding-left: 0.88rem;
-    padding-right: 0.88rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.tiles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tile {
   background-color: #f4f4f4; /* light gray */
-  width: 100%;
+  width: 90%;
   margin-right: 0;
   margin-bottom: 0.44rem;
   transition: color 550ms ease 100ms;
 }
 
-.tile h4 {
-  font-size: 1.3rem;
+#learn h2 {
+  font-size: 1.8rem;
+}
+
+#learn h4 {
+  font-size: 1.1rem;
 }
 
 .tile:hover {
@@ -517,13 +520,20 @@ header nav ul {
 }
 
 .tile h4:hover {
-    color: #00a7cc; /* Aqua blue */
+  color: #00a7cc; /* Aqua blue */
 }
 }
 
 /* Thesis section */
 
 #thesis {
-  max-width: 100%;
+  background-color: white;
+}
+
+#thesis h2 {
+  text-align: center;
+  padding-top: 1.778rem;
+  padding-bottom: 0.88rem;
+  margin: 0;
 }
 /* footer section */
