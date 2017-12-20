@@ -1,4 +1,4 @@
-html {
+html, body {
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -9,6 +9,7 @@ html {
 .main-content {
   background-color: white;
   overflow-x: hidden;
+  height: auto;
 }
 
 h1 {
@@ -60,7 +61,7 @@ header {
   width: 100%;
   background-color: white;
   margin: 0 auto;
-  max-height: 3.55rem;
+  height: auto;
 }
 
 header .mobile {
@@ -70,7 +71,8 @@ header .mobile {
 header .content {
   display: flex;
   align-items: center;
-  padding: 0 1.33rem;
+  margin: 0.88rem 1.334rem;
+  padding: 0;
 }
 
 header .desktop.logo {
@@ -84,15 +86,19 @@ header img {
   padding-right: 0.5rem;
 }
 
-header span {
-  font-size: 1.1rem;
+header .content span {
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #4a4a4a;
-  transition: color 550ms ease 10ms;
+  transition: color 550ms linear 10ms;
 }
 
 header span:hover {
   color: #00A7CC;  /*aqua blue */
+}
+
+header span strong {
+  font-weight: bold;
 }
 
 /* Nav */
@@ -109,7 +115,7 @@ nav li {
 nav a {
   color: #373737; /*dark gray */
   line-height: 1.6;
-  transition: color 550ms ease 10ms;
+  transition: color 550ms linear 10ms;
   text-decoration: none;
 }
 
@@ -145,15 +151,18 @@ header nav ul {
 }
 }
 
-
 /* Main Banner */
+
+.main-content {
+  position: relative;
+}
 
 .section {
   width: 100%;
   height: auto;
   display: flex;
   overflow: hidden;
-  margin: 1.778rem 1.334rem;
+  padding: 1.778rem 1.334rem;
   background-color: #e8e7e5;
 }
 
@@ -175,7 +184,8 @@ header nav ul {
   padding-left: 1.334rem;
   display: flex;
   flex-direction: column;
-  }
+  justify-content: center;
+}
 
 .right .button {
   margin-top: 2rem;
@@ -196,7 +206,6 @@ header nav ul {
 .button:hover {
   color: #00A7CC;  /*aqua blue */
 }
-
 
 @media only screen and (max-width: 1500px) {
   .right h1 {
@@ -261,6 +270,7 @@ header nav ul {
 #information .image-thumbnail.mobile {
   display: none;
 }
+
 #information .quote {
   margin-right: 1.334rem;
 }
@@ -270,15 +280,18 @@ header nav ul {
   margin-bottom: 1.334rem;
 }
 
-.quote span {
+.quote span {    /* error*/
   font-family: Helvetica, sans-serif;
+  margin-top: 1.334rem;
 }
 
-#information .right {
-  margin:0;
+#information .righter {
+  margin: 0;
   height: auto;
   width: 38%;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature {
@@ -312,8 +325,12 @@ header nav ul {
   flex-direction: column;
 }
 
- .content span {
- font-size: 1.2rem;
+.content span {
+  font-size: 1.1rem;
+}
+
+.content h4 {
+  font-size: 1.5rem;
 }
 
 .button_1 {
@@ -330,9 +347,12 @@ header nav ul {
 
 @media only screen and (max-width: 1325px) {
   .content span {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
+.content h4 {
+  font-size: 1rem;
+}
 .section {
   width: 100%;
 }
@@ -340,10 +360,10 @@ header nav ul {
 
 @media only screen and (max-width: 1024px) {
   .content span {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
-#information .right {
+#information .righter {
   width: 50%;
 }
 }
@@ -362,7 +382,7 @@ header nav ul {
   border-left: none;
 }
 
-#information .right {
+#information .righter {
   width: 100%;
   margin: 0 auto;  /* content not centered properly */
   overflow: hidden;
@@ -395,11 +415,12 @@ header nav ul {
   padding-left: 0.88rem;
 }
 
- h4 {
-  font-size: 2rem;
-}
- span {
+.content h4 {
   font-size: 1.6rem;
+}
+
+.content span {
+  font-size: 1.2rem;
 }
 }
 
@@ -459,12 +480,20 @@ header nav ul {
   margin: 0.44rem 0;
 }
 
+.learning span {
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .tiles h4 {
     font-size: 1rem;
   }
 
 .tiles h5 {
+  font-size: 0.9rem;
+}
+
+.learning span {
   font-size: 0.8rem;
 }
 }
@@ -539,6 +568,10 @@ header nav ul {
   margin: 0;
 }
 
+#thesis .left {
+margin-right: 1.334rem;
+}
+
 #thesis h4 {
   margin-top: 1.334rem;
   margin-bottom: 0.44rem;
@@ -575,7 +608,7 @@ video {
   font-size: 1.1rem;
 }
 
-#thesis h4, #thesis p, #thesis .right {
+#thesis h4, #thesis p, #thesis .righter {
   display: none;
 }
 }
